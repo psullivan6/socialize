@@ -18,6 +18,6 @@
 	SHARE_TITLE_HERE		The tile of the ietm to be shared   
 	SHARE_CAPTION_HERE		The "subtitle" of the item to be shared   
 	SHARE_DESCRIPTION_HERE	OK, you get the idea   
-
-*Use only for the regular link, not the JS*   
-SHARE_REDIRECT_URI	This is the URI where the user will be taken after successfully sharing   
+	
+	*Use only for the regular link, not the JS*   
+	SHARE_REDIRECT_URI	This is the URI where the user will be taken after successfully sharing   
