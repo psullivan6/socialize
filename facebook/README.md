@@ -15,9 +15,9 @@
 	FACEBOOK_APP_ID			The number assigned to your facebook app   
 	SHARE_LINK_HERE			The link of the item to be shared   
 	SHARE_IMAGE_HERE		The image of the item to be shared (this will show up in the timeline next to the post)   
-	SHARE_TITLE_HERE			The tile of the ietm to be shared   
+	SHARE_TITLE_HERE		The tile of the ietm to be shared   
 	SHARE_CAPTION_HERE		The "subtitle" of the item to be shared   
-	SHARE_DESCRIPTION_HERE		OK, you get the idea   
+	SHARE_DESCRIPTION_HERE	OK, you get the idea   
 
 *Use only for the regular link, not the JS*   
 SHARE_REDIRECT_URI	This is the URI where the user will be taken after successfully sharing   
