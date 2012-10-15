@@ -1,7 +1,6 @@
-Socialize - Social Sharing
+# Twitter
 ==============
-
-This repo consists of the code needed to create custom social sharing buttons, while matching the API standards of each social media site.  
+http://bit.ly/tw-button   
 
 Each file has 2 versions:   
 -  regular (\*.html)   
