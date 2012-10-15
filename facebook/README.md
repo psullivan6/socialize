@@ -4,7 +4,7 @@
 ## Contains 2 separate parts:   
 - JavaScript click function tied into Facebook's JS [Feed Dialog](http://bit.ly/fb-fd)   
 - Regular link tag that is a fallback for no JS   
-_make sure that the class (or id) of the link tag matches the JS click function   
+*make sure that the class (or id) of the link tag matches the JS click function*   
 
 ** Notes
 >[http://on.fb.me/XeLCl1](http://on.fb.me/XeLCl1)   
