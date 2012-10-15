@@ -1,14 +1,12 @@
-Socialize - Social Sharing
+# Email
 ==============
 
-This repo consists of the code needed to create custom social sharing buttons, while matching the API standards of each social media site.  
+## Notes   
+The onclick action on the link tag is used for a consistent UX (The Facebook JS uses a similar popup).   
 
-Each file has 2 versions:   
--  regular (\*.html)   
--  commented (\*-c.html)   
-
-** Notes
-"Facebook deprecated the Share button on February 28, which means they no longer recommend its use in applications or on external web sites. The share button still works as of now, but Facebook will de-prioritize maintenance of the feature."   
-[http://on.fb.me/XeLCl1](http://on.fb.me/XeLCl1)
-
-
+## Variables   
+	EMAIL_RECIPIENT		The email address of the recipient   
+	* __Suggestion:__ use yourname@domain.com or some other generic placeholder because this field is required*   
+	
+	EMAIL_SUBJECT		The subject line of the email ** make sure to escape all the characters   
+	EMAIL_BODY		The body section of the email ** make sure to escape all the characters   
