@@ -1,5 +1,10 @@
-<script src='http://connect.facebook.net/en_US/all.js'></script><!--	http://bit.ly/fb-fd	-->
-<script type="text/javascript">
+/*
+ * Facebook - Feed Dialog
+ * http://bit.ly/fb-fd
+ *
+ * Include this in the head as well:
+ * <script src='http://connect.facebook.net/en_US/all.js'></script>
+ */
 
 	$('.sZ-facebook').click(function(){
 
@@ -30,5 +35,3 @@
 		return false;	// JavaScript 201 - Return false so that the link tag doesn't execute its native href attribute
 
 	});
-
-</script>
