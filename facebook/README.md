@@ -20,4 +20,4 @@
 	SHARE_DESCRIPTION_HERE	OK, you get the idea   
 	
 	*Use only for the regular link, not the JS*   
-	SHARE_REDIRECT_URI	This is the URI where the user will be taken after successfully sharing   
+	SHARE_REDIRECT_URI		This is the URI where the user will be taken after successfully sharing   
