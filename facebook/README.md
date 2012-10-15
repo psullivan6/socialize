@@ -1,6 +1,5 @@
 # Facebook   
 ==============
-
 - JavaScript click function tied into Facebook's JS [Feed Dialog](http://bit.ly/fb-fd)   
 - Regular link tag that is a fallback for no JS   
 *make sure that the class (or id) of the link tag matches the JS click function*   
