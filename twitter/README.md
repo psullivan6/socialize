@@ -2,12 +2,9 @@
 ==============
 http://bit.ly/tw-button   
 
-Each file has 2 versions:   
--  regular (\*.html)   
--  commented (\*-c.html)   
+## Notes   
+The onclick action on the link tag is used for a consistent UX (The Facebook JS uses a similar popup).   
 
-** Notes
-"Facebook deprecated the Share button on February 28, which means they no longer recommend its use in applications or on external web sites. The share button still works as of now, but Facebook will de-prioritize maintenance of the feature."   
-[http://on.fb.me/XeLCl1](http://on.fb.me/XeLCl1)
-
-
+## Variables   
+	SHARE_LINK_HERE		The link of the item to be shared (shortened = better)   
+	SHARE_TEXT_HERE		The text to be posted in the tweet

@@ -1,9 +1,10 @@
 # Facebook   
 ==============
 __*Create a Facebook app in order to reference the API:    http://bit.ly/fb-d-app*__
-- JavaScript click function tied into Facebook's JS [Feed Dialog](http://bit.ly/fb-fd)   
-- Regular link tag that is a fallback for JavaScript   
+__*Create:*__
+- JavaScript click function tied into Facebook's JavaScript [Feed Dialog](http://bit.ly/fb-fd)   
 *make sure that the class (or id) of the link tag matches the JS click function*   
+- Regular link tag that is a fallback for JavaScript   
 
 
 ## Notes   
