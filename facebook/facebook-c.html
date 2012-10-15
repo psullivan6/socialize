@@ -1,25 +1,17 @@
 <!--	=======================================
-	[ Facebook Share Button ]
-	=======================================
-		
-		This button is comprised of 2 parts:
-		-	JavaScript click function
-		-	link tag fallback for no JS
-		* make sure the class/id of the link matches the JS click function
-
 	[ VARIABLES ]
 	=======================================
 	(double-click the name and replace all for ease of use)
-		
-		FACEBOOK_APP_ID			The number assigned to your facebook app
-		
-		SHARE_LINK_HERE			The link of the item to be shared
-		SHARE_IMAGE_HERE 		The image of the item to be shared (this will show up in the timeline next to the post)
-		SHARE_TITLE_HERE		The tile of the ietm to be shared
-		SHARE_CAPTION_HERE		The "subtitle" of the item to be shared
-		SHARE_DESCRIPTION_HERE		OK, you get the idea
-(link ONY)	SHARE_REDIRECT_URI		This is the URI where the user will be taken after successfully sharing
 
+	FACEBOOK_APP_ID		The number assigned to your facebook app
+	SHARE_LINK_HERE		The link of the item to be shared
+	SHARE_IMAGE_HERE 		The image of the item to be shared (this will show up in the timeline next to the post)
+	SHARE_TITLE_HERE		The tile of the ietm to be shared
+	SHARE_CAPTION_HERE	The "subtitle" of the item to be shared
+	SHARE_DESCRIPTION_HERE	OK, you get the idea
+
+	Use only for the regular link, not the JS
+	SHARE_REDIRECT_URI	This is the URI where the user will be taken after successfully sharing
 -->
 
 <!--	[ Link ]	-->
@@ -29,38 +21,37 @@
 
 
 <!--	[ JavaScript ]	-->
-<script src='http://connect.facebook.net/en_US/all.js'></script><!--	http://bit.ly/fb-fd		-->
+<script src='http://connect.facebook.net/en_US/all.js'></script><!--	http://bit.ly/fb-fd	-->
 <script type="text/javascript">
-	
+
 	$('.sZ-facebook').click(function(){
 
 		FB.init({appId: "FACEBOOK_APP_ID", status: true, cookie: true});
-		
+
 		var me = $(this);	// JavaScript 201 - Use $(this) in a variable so that it doesn't request the same element multiple times
-		
+
 		// calling the API ...
 		var obj = {
-			method: 	'feed',
-			link:		 me.attr('data-link'),				// This is an attribute of the above link tag, edit its contents above
-			picture:	 me.attr('data-image'),				// This is an attribute of the above link tag, edit its contents above
-			name:		 me.attr('data-title'),				// This is an attribute of the above link tag, edit its contents above
-			caption: 	 me.attr('data-caption'),			// This is an attribute of the above link tag, edit its contents above
-			description: me.attr('data-description')		// This is an attribute of the above link tag, edit its contents above
+			method: 'feed',
+			link: me.attr('data-link'),			// This is an attribute of the above link tag, edit its contents above
+			picture: me.attr('data-image'),		// This is an attribute of the above link tag, edit its contents above
+			name: me.attr('data-title'),			// This is an attribute of the above link tag, edit its contents above
+			caption: me.attr('data-caption'),		// This is an attribute of the above link tag, edit its contents above
+			description: me.attr('data-description')	// This is an attribute of the above link tag, edit its contents above
 		};
-		
+
 		function callback(response) {
 			if (response && response.post_id) {
-				//	It was successfully posted, so do something here
+				// It was successfully posted, so do something here
 			} else {
 				// It failed, so do something else here
 			}
 		}
-		
+
 		FB.ui(obj, callback);
-		
+
 		return false;	// JavaScript 201 - Return false so that the link tag doesn't execute its native href attribute
 
 	});
-
 
 </script>
