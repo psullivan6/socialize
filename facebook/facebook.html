@@ -1,0 +1,35 @@
+<a class="sZ_facebook" href="https://www.facebook.com/dialog/feed?app_id=FACEBOOK_APP_ID&amp;link=SHARE_LINK_HERE&amp;picture=SHARE_PICTURE_URL&amp;name=SHARE_TITLE_HERE&amp;caption=SHARE_CAPTION_HERE&amp;description=SHARE_DESCRIPTION_HERE&amp;redirect_uri=SHARE_REDIRECT_URI" data-link="SHARE_LINK_HERE" data-image="SHARE_IMAGE_HERE" data-title="SHARE_TITLE_HERE" data-caption="SHARE_CAPTION_HERE" data-description="SHARE_DESCRIPTION_HERE">Share this awesome thing on Facebook</a>
+
+<script src='http://connect.facebook.net/en_US/all.js'></script>
+<script type="text/javascript">
+	
+	$('.sZ-facebook').click(function(){
+
+		FB.init({appId: "FACEBOOK_APP_ID", status: true, cookie: true});
+		
+		var me = $(this);
+		
+		var obj = {
+			method: 'feed',
+			link: me.attr('data-link'),
+			picture: me.attr('data-image'),
+			name: me.attr('data-title'),
+			caption: me.attr('data-caption'),
+			description: me.attr('data-description')
+		};
+		
+		function callback(response) {
+			if (response && response.post_id) {
+				//	It was successfully posted, so do something here
+			} else {
+				// It failed, so do something else here
+			}
+		}
+		
+		FB.ui(obj, callback);
+		
+		return false;
+
+	});
+
+</script>

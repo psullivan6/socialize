@@ -1,0 +1,23 @@
+<!--	=======================================
+	[ Email Button ]
+	=======================================
+		Basic Link tag that can be customized.
+		I use the onclick action just for a consistent UX (Facebook JS uses a similar popup).
+
+	[ VARIABLE ]
+	=======================================
+	Google's so awesome that they'll pull all the article, post, etc... content from the URL for you.
+	(double-click the name and replace all for ease of use)
+			
+		EMAIL_RECIPIENT		The email address of the recipient
+					** I suggest using yourname@domain.com or some other generic placeholder because this field is required
+								
+		EMAIL_SUBJECT		The subject line of the email ** make sure to escape all the characters
+		EMAIL_BODY		The body section of the email ** make sure to escape all the characters
+
+-->
+
+<!--	[ Link ]	-->
+<a target="_blank" class="sZ-button sZ-email" href="mailto:EMAIL_RECIPIENT?subject=EMAIL_SUBJECT&amp;body=EMAIL_BODY" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=600');return false;">
+	<span>email this thing to someone</span>
+</a>
